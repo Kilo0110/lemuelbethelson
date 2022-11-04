@@ -1,0 +1,26 @@
+#first-slide {
+  background: url("../img/image 3.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#second-slide {
+  background: url("../img/image 1.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#third-slide {
+  background: url("../img/image 4.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.hero-section__slide-heading {
+  max-width: clamp(10rem, 10rem + 2vw, 14rem) !important;
+}
+@media screen and (min-width: 400px) {
+  .hero-section__slide-heading {
+    max-width: clamp(10rem, 15rem + 2vw, 14rem) !important;
+  }
+}/*# sourceMappingURL=style.css.map */
