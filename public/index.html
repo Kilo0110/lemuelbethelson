@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="./icons/css/all.min.css">
   <!-- SwiperJS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  
+
   <!-- Local CSS stylesheer -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Lemuel Bethelson || Home</title>
@@ -23,7 +23,9 @@
 <body>
   <header class="header fixed z-10 top-0 left-0 w-full min-h-[10vh]">
     <nav class="nav flex items-center justify-between py-4 px-8">
-      <a href="/" class="nav__link hover:tracking-widest transition-all duration-300 text-white">Lemuel Bethelson</a>
+      <a href="/"
+        class="nav__logo nav__link font-bold text-lg hover:tracking-widest transition-all duration-300 text-white">Lemuel
+        Bethelson</a>
       <menu
         class="nav__link-containers flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent">
         <li
@@ -61,33 +63,32 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="first-slide">
-          <h1 class="hero-section__slide-heading text-white text-xl font-bold">
+          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
             Professional Telecommunication Infrastructure Maintenance
           </h1>
         </div>
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="second-slide">
-          <h1 class="hero-section__slide-heading text-white text-xl font-bold">
+          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
             Audit Checker and TSS Delivere
           </h1>
         </div>
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="third-slide">
-          <h1 class="hero-section__slide-heading text-white text-xl font-bold">
+          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
             Certified Ascot Flying Doctors
           </h1>
         </div>
-    
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination bg-color"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev color"></div>
+      <div class="swiper-button-next color"></div>
       </div>
   </section>
   <script src="./assets/js/swiper.js"></script>
+  <script src="./assets/js/observers.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,30 @@
+.nav__logo {
+  position: relative;
+}
+.nav__logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  height: 100%;
+  width: 3px;
+  background-color: #77000B;
+}
+
 #first-slide {
-  background: url("../img/image 3.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background: url("../img/image 3.jpeg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 #second-slide {
-  background: url("../img/image 1.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background: url("../img/image 1.jpeg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 #third-slide {
-  background: url("../img/image 4.jpeg"), rgba(0, 0, 0, 0.37) top center/cover;
+  background: url("../img/image 4.jpeg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -22,5 +35,46 @@
 @media screen and (min-width: 400px) {
   .hero-section__slide-heading {
     max-width: clamp(10rem, 15rem + 2vw, 14rem) !important;
+  }
+}
+
+.color {
+  color: #77000B;
+}
+
+.bg-color span {
+  background-color: #77000B;
+}
+
+.animate h1 {
+  -webkit-animation: animateHeading 1.5s ease 1 normal;
+          animation: animateHeading 1.5s ease 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animateHeading {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateHeading {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
