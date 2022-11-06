@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Local FontAwesome icons -->
-  <link rel="stylesheet" href="./icons/css/all.min.css">
+  <link rel="stylesheet" href="./assets/icons/css/all.min.css">
   <!-- SwiperJS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -24,36 +24,35 @@
   <header class="header fixed z-10 top-0 left-0 w-full min-h-[10vh]">
     <nav class="nav flex items-center justify-between py-4 px-8">
       <a href="/"
-        class="nav__logo nav__link font-bold text-lg hover:tracking-widest transition-all duration-300 text-white">Lemuel
-        Bethelson</a>
+        class="nav__logo nav__link font-bold text-lg hover:tracking-widest transition-all duration-300 text-white">
+        <img class="w-28" src="./assets/img/logo --white.png" alt="">
+      </a>
       <menu
-        class="nav__link-containers flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent">
+        class="nav__links-container z-10 flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:right-0 lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent transition-all duration-300">
         <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 bg-black text-white border-black hover:bg-black hover:text-white hover:border-black">
+          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 bg-red-800 text-white border-black hover:bg-red-800 hover:text-white hover:border-black lg:text-white lg:border-none">
           Home <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
         <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
-          Our
-          Services <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
-        <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-white lg:border-none">
           Our
           Mission <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
         <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-white lg:border-none">
           Our
-          Vision <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
+          Values <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
         <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-white lg:border-none">
           Our
           Works <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
         <li
-          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+          class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-white lg:border-none">
           Contact
           us <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
       </menu>
-      <button class="hamburger-icon lg:hidden"><i class="fa-solid fa-bars"></i></button>
-      <button class="close-menu-icon lg:hidden"><i class="fa-solid fa-xmark"></i></i></button>
+      <button class="hamburger-icon min-h-[10px] z-10 aspect-square text-white lg:hidden"><i
+          class="fa-solid fa-bars"></i></button>
+      <button class="close-menu-icon text-red-800 fixed top-7 z-[11] -right-full transition-all duration-300 lg:hidden"><i
+          class="fa-solid fa-xmark"></i></i></button>
     </nav>
   </header>
   <section class="hero-section min-h-[90vh]">
@@ -63,32 +62,39 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="first-slide">
-          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
+          <h1
+            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
             Professional Telecommunication Infrastructure Maintenance
           </h1>
         </div>
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="second-slide">
-          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
+          <h1
+            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
             Audit Checker and TSS Delivere
           </h1>
         </div>
         <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="third-slide">
-          <h1 class="hero-section__slide-heading transition-all duration-300 text-white text-xl font-bold text-center">
+          <h1
+            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
             Certified Ascot Flying Doctors
           </h1>
         </div>
 
       </div>
       <!-- Pagination -->
-      <div class="swiper-pagination bg-color"></div>
+      <div class="swiper-pagination"></div>
 
       <!-- Navigation buttons -->
       <div class="swiper-button-prev color"></div>
       <div class="swiper-button-next color"></div>
-      </div>
+    </div>
   </section>
+<section class="value-section flex flex-col">
+  <div class="value-container"></div>
+</section>
+
   <script src="./assets/js/swiper.js"></script>
-  <script src="./assets/js/observers.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

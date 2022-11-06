@@ -1,25 +1,11 @@
-.nav__logo {
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -.5em;
-    height: 100%;
-    width: 3px;
-    background-color: #77000B;
-  }
-}
-
 #first-slide {
-  background: url('../img/image 3.jpeg'), rgba(0, 0, 0, 0.57) top center / cover;
+  background: url('../img/jackson-david-1Y2snhZhH7M-unsplash.jpg'), rgba(0, 0, 0, 0.57) top center / cover;
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 #second-slide {
-  background: url('../img/image 1.jpeg'), rgba(0, 0, 0, 0.57) top center / cover;
+  background: url('../img/jackson-david--oW0q0iOgBc-unsplash.jpg'), rgba(0, 0, 0, 0.77) top center / cover;
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -30,22 +16,24 @@
   background-size: cover;
 }
 
-.hero-section__slide-heading {
-  max-width: clamp(10rem, 10rem + 2vw, 14rem) !important;
-
-  @media screen and (min-width: 400px) {
-  max-width: clamp(10rem, 15rem + 2vw, 14rem) !important;
-
-  }
-}
-
 .color {
   color: #77000B;
 }
 
-.bg-color {
+.show-menu {
+  right: 0 !important;
+}
+
+.show-close-btn {
+  right: 1.5em !important;
+}
+
+.swiper-pagination {
   span {
-    background-color: #77000B;
+    width: 15px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(206, 206, 206);
   }
 }
 
