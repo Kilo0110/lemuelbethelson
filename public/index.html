@@ -21,11 +21,11 @@
 </head>
 
 <body>
-  <header class="header fixed z-10 top-0 left-0 w-full min-h-[10vh]">
+  <header class="header bg-white fixed z-10 top-0 left-0 w-full min-h-[10vh]">
     <nav class="nav flex items-center justify-between py-4 px-8">
       <a href="/"
         class="nav__logo nav__link font-bold text-lg hover:tracking-widest transition-all duration-300 text-white">
-        <img class="w-28" src="./assets/img/logo --white.png" alt="">
+        <img class="w-24" src="./assets/img/logo --red.png" alt="">
       </a>
       <menu
         class="nav__links-container z-10 flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:right-0 lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent transition-all duration-300">
@@ -49,52 +49,69 @@
           Contact
           us <i class="fa-solid fa-angles-right text-xs lg:hidden"></i> </li>
       </menu>
-      <button class="hamburger-icon min-h-[10px] z-10 aspect-square text-white lg:hidden"><i
+      <button class="hamburger-icon min-h-[10px] z-10 aspect-square text-black lg:hidden"><i
           class="fa-solid fa-bars"></i></button>
       <button class="close-menu-icon text-red-800 fixed top-7 z-[11] -right-full transition-all duration-300 lg:hidden"><i
           class="fa-solid fa-xmark"></i></i></button>
     </nav>
   </header>
-  <section class="hero-section min-h-[90vh]">
+  <section
+    class="hero-section min-h-[90vh] flex flex-col justify-center gap-5 mt-[13vh] md:flex-row md:min-h-0 md:max-h-70vh md:align-items">
+    <div class="hero-section__intro-heading-container pl-8">
+      <h3 class="serif">We Are</h3>
+      <h2 class="hero-name text-3xl font-bold">Lemuel <br> Bethelson</h2>
+      <div class="hero-section__about flex-col gap-3 mt-4 hidden md:flex">
+        <p>With a focus on providing sustainable and accessible power supply, Lemuel Bethelson is a certified power
+          infrastructure supplier and maintainer.</p>
+        <button class="bg-red-800 text-white rounded-lg flex gap-2 items-center p-3 self-start">Work with us <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper max-w-full">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="first-slide">
-          <h1
-            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
-            Professional Telecommunication Infrastructure Maintenance
-          </h1>
+        <div class="swiper-slide flex items-center md:flex-col">
+          <img src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg" alt="" class="slide-img block h-[20vh] md:h-full">
+          <p class="slide-text text-sm pl-6 pr-2 md:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+            consequatur.</p>
         </div>
-        <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="second-slide">
-          <h1
-            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
-            Audit Checker and TSS Delivere
-          </h1>
+        <div class="swiper-slide flex items-center md:flex-col flex-row-reverse">
+          <img src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg" alt="" class="slide-img block h-[20vh] md:h-full">
+          <p class="slide-text text-sm pr-6 pl-2 md:hidden text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Rem,
+            consequatur.</p>
         </div>
-        <div class="swiper-slide min-h-[90vh] flex justify-center items-center" id="third-slide">
-          <h1
-            class="hero-section__slide-heading px-8 transition-all duration-300 text-white text-xl font-bold text-center md:px-10 md:text-3xl lg:6xl">
-            Certified Ascot Flying Doctors
-          </h1>
+        <div class="swiper-slide flex items-center md:flex-col">
+          <img src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg" alt="" class="slide-img block h-[20vh] md:h-full">
+          <p class="slide-text text-sm pl-6 pr-2 md:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+            consequatur.</p>
+        </div>
+        </div>
         </div>
 
+    <div class="final-container flex gap-4">
+      <div class="services-container text-sm w-full flex flex-col justify-center gap-3 pl-4">
+        <p class="service flex gap-2 items-center"><i class="fa-solid fa-screwdriver-wrench text-red-800"></i>Maintenance
+        </p>
+        <p class="service flex gap-2 items-center"><i class="fa-solid fa-tower-observation text-red-800"></i>Installation
+        </p>
+        <p class="service flex gap-2 items-center"><i class="fa-solid fa-bus-simple text-red-800"></i>Operational Vehicles
+          (OPV)</p>
       </div>
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-prev color"></div>
-      <div class="swiper-button-next color"></div>
+      <div class="cta-container relative">
+        <img src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg" class="h-32 aspect-[5/3]" alt="">
+        <button
+          class="w-22 px-2 absolute -top-8 -left-1/2 aspect-square rounded-full border-4 border-white text-white bg-red-800 text-sm">
+          Work With Us</button>
+      </div>
     </div>
   </section>
-<section class="value-section flex flex-col">
-  <div class="value-container"></div>
-</section>
 
   <script src="./assets/js/swiper.js"></script>
-  <script src="./assets/js/index.js"></script>
+  <!-- <script src="./assets/js/index.js"></script> -->
 </body>
 
 </html>

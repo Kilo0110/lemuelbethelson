@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Serif&display=swap");
+.sans-serif {
+  font-family: "Montserrat", sans-serif;
+}
+
+.serif {
+  font-family: "Noto Serif", serif;
+}
+
 #first-slide {
   background: url("../img/jackson-david-1Y2snhZhH7M-unsplash.jpg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
@@ -65,5 +74,26 @@
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 480px) {
+  .slide-text {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  .slide-text {
+    padding-right: 1rem !important;
+  }
+}
+
+.slide-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 600px) {
+  .slide-img {
+    height: 25vh;
+    aspect-ratio: 4/3;
   }
 }/*# sourceMappingURL=style.css.map */
