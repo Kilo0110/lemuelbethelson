@@ -7,6 +7,12 @@
   font-family: "Noto Serif", serif;
 }
 
+body {
+  background-image: url("../img/dots.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #first-slide {
   background: url("../img/jackson-david-1Y2snhZhH7M-unsplash.jpg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
@@ -26,7 +32,7 @@
 }
 
 .color {
-  color: #77000B;
+  color: #77000b;
 }
 
 .show-menu {
@@ -93,7 +99,23 @@
 }
 @media screen and (min-width: 600px) {
   .slide-img {
-    height: 25vh;
     aspect-ratio: 4/3;
   }
+}
+
+.service {
+  flex: 1 0 21%;
+}
+.service:hover, .service:nth-of-type(even) {
+  border: 2px solid #991b1b;
+  background-color: white;
+}
+.service:hover .service-name, .service:nth-of-type(even) .service-name {
+  color: #991b1b;
+}
+.service:hover .service-description, .service:nth-of-type(even) .service-description {
+  color: black;
+}
+.service:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
