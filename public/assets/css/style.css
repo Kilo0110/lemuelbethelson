@@ -13,6 +13,30 @@ body {
   background-size: contain;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "intro swiper" "final final";
+  }
+  .hero-section__intro-heading-container {
+    grid-area: intro;
+  }
+  .hero-section .swiper {
+    grid-area: swiper;
+  }
+  .hero-section .final-container {
+    grid-area: final;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    display: flex !important;
+    flex-direction: row;
+  }
+}
+
 #first-slide {
   background: url("../img/jackson-david-1Y2snhZhH7M-unsplash.jpg"), rgba(0, 0, 0, 0.57) top center/cover;
   background-blend-mode: overlay;
@@ -103,11 +127,7 @@ body {
   }
 }
 
-.service {
-  flex: 1 0 21%;
-}
 .service:hover, .service:nth-of-type(even) {
-  border: 2px solid #991b1b;
   background-color: white;
 }
 .service:hover .service-name, .service:nth-of-type(even) .service-name {
@@ -116,6 +136,29 @@ body {
 .service:hover .service-description, .service:nth-of-type(even) .service-description {
   color: black;
 }
-.service:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+.catalogue-img {
+  flex: 1 0 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.fade {
+  opacity: 1;
+}
+
+slide-in {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 250ms ease-in;
+}
+slide-in.fade {
+  opacity: 0;
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */

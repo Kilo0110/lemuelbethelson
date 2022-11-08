@@ -12,12 +12,12 @@
     />
     <!-- Local FontAwesome icons -->
     <link
-      rel="stylesheet"
+      rel="stylesheet preconnect"
       href="./assets/icons/css/all.min.css"
     />
     <!-- SwiperJS CDN -->
     <link
-      rel="stylesheet"
+      rel="stylesheet preconnect"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
@@ -93,12 +93,12 @@
         </button>
       </nav>
     </header>
-    <main class="main flex flex-col gap-5">
+    <main class="main flex flex-col gap-10">
       <section
-        class="hero-section min-h-[90vh] flex flex-col justify-center gap-5 mt-[11vh] md:flex-row md:min-h-0 md:min-h-[70vh] md:max-w-[100vw] md:align-items md:px-10 md:mt-[15vh]"
+        class="hero-section min-h-[90vh] flex flex-col justify-center gap-5 mt-[11vh] md:grid md:min-h-0 md:min-h-[70vh] md:max-w-[100vw] md:align-items md:px-10 md:mt-[17vh] lg:flex-row"
       >
         <div
-          class="hero-section__intro-heading-container pl-8 md:pl-0 flex flex-col justify-center"
+          class="hero-section__intro-heading-container fade-in pl-8 md:pl-0 flex flex-col justify-center"
         >
           <h3 class="serif">We Are</h3>
           <h2 class="hero-name text-3xl font-bold">
@@ -122,45 +122,45 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper max-w-full md:max-w-[350px]">
+        <div class="swiper fade-in max-w-full lg:max-w-[350px]">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div
-              class="swiper-slide flex items-center md:flex-col md:flex-row-reverse"
+              class="swiper-slide flex items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
-                class="slide-img block h-[20vh] md:h-full object-cover"
+                class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pl-6 pr-2 md:hidden">
+              <p class="slide-text text-sm pl-6 pr-2 lg:hidden">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
                 consequatur.
               </p>
             </div>
             <div
-              class="swiper-slide flex items-center md:flex-col md:flex-row-reverse"
+              class="swiper-slide flex flex-row-reverse items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
-                class="slide-img block h-[20vh] md:h-full object-cover"
+                class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pr-6 pl-2 md:hidden text-right">
+              <p class="slide-text text-sm pr-6 pl-2 lg:hidden text-right">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
                 consequatur.
               </p>
             </div>
             <div
-              class="swiper-slide flex items-center md:flex-col md:flex-row-reverse"
+              class="swiper-slide flex items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
-                class="slide-img block h-[20vh] md:h-full object-cover"
+                class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pl-6 pr-2 md:hidden">
+              <p class="slide-text text-sm pl-6 pr-2 lg:hidden">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
                 consequatur.
               </p>
@@ -168,9 +168,9 @@
           </div>
         </div>
 
-        <div class="final-container flex gap-4">
+        <div class="final-container fade-in flex gap-4">
           <div
-            class="hero-section__services-container text-sm w-full flex flex-col justify-center gap-5 pl-4 md:min-w-[300px]"
+            class="hero-section__services-container text-sm w-full flex flex-col justify-center gap-5 pl-4 md:min-w-[300px] md:flex-row lg:flex-col"
           >
             <div
               class="hero-section__service md:p-3 md:rounded-xl md:bg-red-800 md:text-white flex flex-col gap-2 items-center md:max-w-[300px]"
@@ -233,49 +233,87 @@
       </section>
       <section class="services-section">
         <h1 class="text-center text-3xl font-bold">What We Do</h1>
-        <div class="services-container flex flex-row flex-wrap gap-4 px-4 py-3">
-          <div class="service transition-all duration-300 basis-[300px] grow text-sm py-6 px-6 rounded-lg bg-red-800 flex flex-col gap-2 text-center">
-            <h2 class="service-name text-white font-bold flex flex-col gap-2 items-center">
+        <div
+          class="services-container flex justify-center flex-row flex-wrap gap-5 px-4 py-3"
+        >
+          <div
+            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+          >
+            <img
+              src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
+              alt=""
+              class="service-img object-cover max-h-[35vh]"
+            />
+            <h2
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+            >
               <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
               Repair of Telecommunicatiion infrastructure
             </h2>
-            <p class="service-description text-white">
+            <p class="service-description text-white px-3 pb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nobis libero vitae quos sequi fugit? Facilis similique molestiae
               quidem eveniet laborum vero, voluptates dolor, nemo dolores
               necessitatibus repudiandae consequuntur corrupti.
             </p>
           </div>
-          <div class="service transition-all duration-300 basis-[300px] grow text-sm py-6 px-6 rounded-lg bg-red-800 flex flex-col gap-2 text-center">
-            <h2 class="service-name text-white font-bold flex flex-col gap-2 items-center">
+          <div
+            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+          >
+            <img
+              src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
+              alt=""
+              class="service-img object-cover max-h-[35vh]"
+            />
+            <h2
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+            >
               <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
               Repair of Telecommunicatiion infrastructure
             </h2>
-            <p class="service-description text-white">
+            <p class="service-description text-white px-3 pb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nobis libero vitae quos sequi fugit? Facilis similique molestiae
               quidem eveniet laborum vero, voluptates dolor, nemo dolores
               necessitatibus repudiandae consequuntur corrupti.
             </p>
           </div>
-          <div class="service transition-all duration-300 basis-[300px] grow text-sm py-6 px-6 rounded-lg bg-red-800 flex flex-col gap-2 text-center">
-            <h2 class="service-name text-white font-bold flex flex-col gap-2 items-center">
+          <div
+            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+          >
+            <img
+              src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
+              alt=""
+              class="service-img object-cover max-h-[35vh]"
+            />
+            <h2
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+            >
               <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
               Repair of Telecommunicatiion infrastructure
             </h2>
-            <p class="service-description text-white">
+            <p class="service-description text-white px-3 pb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nobis libero vitae quos sequi fugit? Facilis similique molestiae
               quidem eveniet laborum vero, voluptates dolor, nemo dolores
               necessitatibus repudiandae consequuntur corrupti.
             </p>
           </div>
-          <div class="service transition-all duration-300 basis-[300px] grow text-sm py-6 px-6 rounded-lg bg-red-800 flex flex-col gap-2 text-center">
-            <h2 class="service-name text-white font-bold flex flex-col gap-2 items-center">
+          <div
+            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+          >
+            <img
+              src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
+              alt=""
+              class="service-img object-cover max-h-[35vh]"
+            />
+            <h2
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+            >
               <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
               Repair of Telecommunicatiion infrastructure
             </h2>
-            <p class="service-description text-white">
+            <p class="service-description text-white px-3 pb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nobis libero vitae quos sequi fugit? Facilis similique molestiae
               quidem eveniet laborum vero, voluptates dolor, nemo dolores
@@ -284,9 +322,49 @@
           </div>
         </div>
       </section>
+      <section class="images-catalogue-section flex flex-wrap justify-center gap-4 px-3 max-w-[1200px] mx-auto">
+        <img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        /><img
+          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
+          alt=""
+          class="catalogue-img h-40 aspect-square rounded-2xl"
+        />
+      </section>
     </main>
 
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/observers.js"></script>
   </body>
 </html>
