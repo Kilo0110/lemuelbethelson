@@ -53,32 +53,46 @@
           class="nav__links-container z-[11] flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:right-0 lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent transition-all duration-300"
         >
           <li
-            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
           >
-            Home <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            <a
+              href="#hero-section"
+              class="flex items-center justify-between"
+            >
+              Home <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
           </li>
           <li
-            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
           >
-            Our Mission
-            <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            <a
+              href="#services-section"
+              class="flex items-center justify-between"
+            >
+              What We Do
+              <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
           </li>
           <li
-            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
           >
-            Our Values
-            <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            <a
+              href="#gallery-section"
+              class="flex items-center justify-between"
+            >
+              Gallery <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
           </li>
           <li
-            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
           >
-            Our Works <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
-          </li>
-          <li
-            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 flex items-center justify-between transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
-          >
-            Contact us
-            <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            <a
+              href="#contact-section"
+              class="flex items-center justify-between"
+            >
+              Contact Us
+              <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
           </li>
         </menu>
         <button
@@ -96,6 +110,7 @@
     <main class="main flex flex-col gap-10">
       <section
         class="hero-section min-h-[90vh] flex flex-col justify-center gap-5 mt-[11vh] md:grid md:min-h-0 md:min-h-[70vh] md:max-w-[100vw] md:align-items md:px-10 md:mt-[17vh] lg:flex-row"
+        id="hero-section"
       >
         <div
           class="hero-section__intro-heading-container fade-in pl-8 md:pl-0 flex flex-col justify-center"
@@ -127,42 +142,46 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div
-              class="swiper-slide flex items-center lg:flex-col lg:flex-row-reverse"
+              class="swiper-slide bg-white/75 backdrop-blur flex items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
                 class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pl-6 pr-2 lg:hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                consequatur.
+              <p class="slide-text text-sm leading-5 pl-6 pr-2 lg:hidden">
+                Lemuel Bethelson is a telecommunications and power
+                infrastructure supplier, maintainer and facilitator.
               </p>
             </div>
             <div
-              class="swiper-slide flex flex-row-reverse items-center lg:flex-col lg:flex-row-reverse"
+              class="swiper-slide bg-white/75 backdrop-blur flex flex-row-reverse items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
                 class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pr-6 pl-2 lg:hidden text-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                consequatur.
+              <p
+                class="slide-text text-sm leading-5 pr-6 pl-2 lg:hidden text-right"
+              >
+                With years of experience in the power and telecommunications
+                sector we are well-equipped to meet all your power supply and
+                telecommunications needs.
               </p>
             </div>
             <div
-              class="swiper-slide flex items-center lg:flex-col lg:flex-row-reverse"
+              class="swiper-slide bg-white/75 backdrop-blur flex items-center lg:flex-col lg:flex-row-reverse"
             >
               <img
                 src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
                 alt=""
                 class="slide-img block h-[20vh] lg:h-full object-cover"
               />
-              <p class="slide-text text-sm pl-6 pr-2 lg:hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                consequatur.
+              <p class="slide-text text-sm leading-5 pl-6 pr-2 lg:hidden">
+                Our wealth of experience in these sectors also make us
+                well-poised to perform audit and quality checks for your
+                infrastructures and finances.
               </p>
             </div>
           </div>
@@ -184,8 +203,8 @@
                 >Maintenance
               </div>
               <p class="hero-section__service__text hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                fugiat ullam eveniet minima quasi aliquid?
+                We maintain and repair telecommunications and power
+                infrastructures to ensure optimal performance.
               </p>
             </div>
             <div
@@ -198,8 +217,9 @@
                 >Installation
               </div>
               <p class="hero-section__service__text hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                fugiat ullam eveniet minima quasi aliquid?
+                We perform the installation of telecommunications infrastructure
+                such as towers as well as the power facilities on which these
+                infrastructures run on.
               </p>
             </div>
             <div
@@ -212,8 +232,9 @@
                 >Operational Vehicles (OPV)
               </div>
               <p class="service__text hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                fugiat ullam eveniet minima quasi aliquid?
+                We also provide operational vehicles for personnel involved in
+                the installation, management and maintenance of these
+                infrastructures.
               </p>
             </div>
           </div>
@@ -231,13 +252,16 @@
           </div>
         </div>
       </section>
-      <section class="services-section">
+      <section
+        class="services-section"
+        id="services-section"
+      >
         <h1 class="text-center text-3xl font-bold">What We Do</h1>
         <div
           class="services-container flex justify-center flex-row flex-wrap gap-5 px-4 py-3"
         >
           <div
-            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+            class="service transition-all fade-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
           >
             <img
               src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
@@ -245,20 +269,21 @@
               class="service-img object-cover max-h-[35vh]"
             />
             <h2
-              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3 capitalize"
             >
-              <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
-              Repair of Telecommunicatiion infrastructure
+              <i class="fa-solid fa-tower-observation"></i>Installation of
+              generator sets and Telecommunicatiion infrastructure
             </h2>
             <p class="service-description text-white px-3 pb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              nobis libero vitae quos sequi fugit? Facilis similique molestiae
-              quidem eveniet laborum vero, voluptates dolor, nemo dolores
-              necessitatibus repudiandae consequuntur corrupti.
+              At Lemuel Bethelson, our primary function is the installation of
+              telecommunications infrastructure such as telecommunications
+              towers. We also carry out installations of generator sets as well
+              Hybrid Solutions to power these infrastructures to ensure seamless
+              functionalities.
             </p>
           </div>
           <div
-            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+            class="service transition-all fade-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
           >
             <img
               src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
@@ -266,20 +291,22 @@
               class="service-img object-cover max-h-[35vh]"
             />
             <h2
-              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3 capitalize"
             >
               <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
               Repair of Telecommunicatiion infrastructure
             </h2>
             <p class="service-description text-white px-3 pb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              nobis libero vitae quos sequi fugit? Facilis similique molestiae
-              quidem eveniet laborum vero, voluptates dolor, nemo dolores
-              necessitatibus repudiandae consequuntur corrupti.
+              Certified by Ascot as a flying doctor and with 10 years of
+              experience in the telecommunications and power sector, we, at
+              Lemuel Bethelson, are vastly trained in the maintenance and
+              repairs of various kinds of telecommunications infrastructure as
+              well as the generators and/or Hybrid Solutions that power these
+              infrastructures.
             </p>
           </div>
           <div
-            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+            class="service transition-all fade-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
           >
             <img
               src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
@@ -287,20 +314,22 @@
               class="service-img object-cover max-h-[35vh]"
             />
             <h2
-              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3 capitalize"
             >
-              <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
-              Repair of Telecommunicatiion infrastructure
+              <i class="fa-solid fa-file-circle-check"></i>Performance of audit
+              checks
             </h2>
             <p class="service-description text-white px-3 pb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              nobis libero vitae quos sequi fugit? Facilis similique molestiae
-              quidem eveniet laborum vero, voluptates dolor, nemo dolores
-              necessitatibus repudiandae consequuntur corrupti.
+              We understand the importance of quality control and technical
+              assurance to any system even more so to the telecommunications and
+              power sector. This is why we are well-equipped to carry out audit
+              checks and quality assurance actions to ensure that all systems,
+              implemented by us or another walk exactly as they should and are
+              not prone to failure due to errors or oversight.
             </p>
           </div>
           <div
-            class="service transition-all slide-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
+            class="service transition-all fade-in overflow-hidden duration-300 basis-[300px] grow text-sm rounded-2xl bg-red-800 flex flex-col gap-2 text-center shadow-2xl max-w-[350px]"
           >
             <img
               src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
@@ -308,63 +337,186 @@
               class="service-img object-cover max-h-[35vh]"
             />
             <h2
-              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3"
+              class="service-name text-white font-bold flex flex-col gap-2 items-center pt-3 capitalize"
             >
-              <i class="fa-solid fa-screwdriver-wrench"></i>Maintenance and
-              Repair of Telecommunicatiion infrastructure
+              <i class="fa-solid fa-hand-holding-dollar"></i>Sales, purchase and
+              distribution of supplies and merchandise
             </h2>
             <p class="service-description text-white px-3 pb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              nobis libero vitae quos sequi fugit? Facilis similique molestiae
-              quidem eveniet laborum vero, voluptates dolor, nemo dolores
-              necessitatibus repudiandae consequuntur corrupti.
+              Not only are we involved in the technical aspect of the
+              telecommunications and power sector, we are also deeply involved
+              in the finanical aspect too. We have extensive experience in the
+              sale, purchase and distribution of supplies in this sectors. We
+              also have a wealth of experience in general merchandising that
+              makes us able to provide such services to our clients.
             </p>
           </div>
         </div>
       </section>
-      <section class="images-catalogue-section flex flex-wrap justify-center gap-4 px-3 max-w-[1200px] mx-auto">
-        <img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        /><img
-          src="./assets/img/jackson-david-1Y2snhZhH7M-unsplash.jpg"
-          alt=""
-          class="catalogue-img h-40 aspect-square rounded-2xl"
-        />
+      <section
+        class="images-catalogue-section flex flex-wrap justify-center gap-4 px-3 max-w-[1200px] mx-auto"
+        id="gallery-section"
+      >
+        <ul class="honeycomb flex flex-wrap justify-center gap-5">
+          <li class="honeycomb-cell overflow-hidden fade-in">
+            <img
+              class="honeycomb-cell__image transition-all duration-300 w-full h-full object-cover"
+              src="./assets/img/jackson-david--oW0q0iOgBc-unsplash.jpg"
+            />
+          </li>
+          <li class="honeycomb-cell overflow-hidden fade-in">
+            <img
+              class="honeycomb-cell__image transition-all duration-300 w-full h-full object-cover"
+              src="./assets/img/image 1.jpeg"
+            />
+          </li>
+          <li class="honeycomb-cell overflow-hidden fade-in">
+            <img
+              class="honeycomb-cell__image transition-all duration-300 w-full h-full object-cover"
+              src="./assets/img/image 2.jpeg"
+            />
+          </li>
+          <li class="honeycomb-cell overflow-hidden fade-in">
+            <img
+              class="honeycomb-cell__image transition-all duration-300 w-full h-full object-cover"
+              src="./assets/img/image 6.jpeg"
+            />
+          </li>
+        </ul>
+      </section>
+      <section
+        class="contact-section flex flex-col justify-center items-center gap-3 overflow-hidden"
+        id="contact-section"
+      >
+        <h1
+          class="flex justify-center items-center text-center text-3xl font-bold min-h-[40vh] w-full border-2"
+        >
+          We'd love to hear from you
+        </h1>
+        <div class="mapouter md:w-full md:h-full max-w-[900px]">
+          <h3 class="font-bold text-xl mb-3 md:hidden">Pay Us A Visit</h3>
+          <div class="gmap_canvas md:w-full md:h-full">
+            <iframe
+              class="w-full h-full"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=71%20Adebola%20street%20off%20Adeniran%20Ogunsanya%20Street%20lagos%20nigeria&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+            <a href="https://2piratebay.org"></a><br /><a
+              href="https://www.embedgooglemap.net"
+              >google maps embedded api</a
+            >
+          </div>
+        </div>
+        <div
+          class="chat-info-container flex justify-center flex-col gap-3 min-h-[40vh] px-3 pt-4 w-full max-w-[500px]"
+        >
+          <h3 class="font-bold text-xl text-center">Have A Chat With Us</h3>
+          <div class="contact-info text-sm md:text-base">
+            <i class="fa-brands fa-whatsapp text-red-800"></i> 08000000000
+          </div>
+          <div class="contact-info text-sm md:text-base">
+            <i class="fa-solid fa-envelope text-red-800"></i>
+            example@example.com
+          </div>
+          <div class="contact-info text-sm md:text-base">
+            <i class="fa-solid fa-location-dot text-red-800"></i> 71 Adebola
+            street off Adeniran Ogunsanya Street lagos nigeria
+          </div>
+        </div>
+        <div
+          class="pitch-container w-full px-3 bg-red-800 text-white py-4 max-w-[500px]"
+        >
+          <h3 class="font-bold text-xl text-center">Or Send Us A Pitch</h3>
+          <form
+            action="https://formsubmit.co/lembethng@gmail.com"
+            method="POST"
+            class="flex flex-col gap-3 pt-4"
+          >
+            <div class="input-container flex flex-col gap-1">
+              <label for="name"
+                >Your Name <span class="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                required
+                class="border-2 rounded-full bg-slate-100 px-3 py-2 border-red-800 focus-visible:outline-0 focus:bg-white transition-all duration-300 text-black"
+              />
+            </div>
+            <div class="input-container flex flex-col gap-1">
+              <label for="email"
+                >Your Email <span class="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                required
+                class="border-2 rounded-full bg-slate-100 px-3 py-2 border-red-800 focus-visible:outline-0 focus:bg-white transition-all duration-300 text-black"
+              />
+            </div>
+            <div class="input-container flex flex-col gap-1">
+              <label for="pitch"
+                >Your Pitch <span class="text-red-500 font-bold">*</span>
+              </label>
+              <textarea
+                name="pitch"
+                id=""
+                cols="30"
+                rows="5"
+                class="rounded-xl border-2 border-red-800 focus-visible:outline-0 focus:bg-white transition-all duration-300 text-black bg-slate-100 p-3"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thank you for contacting us at https://lemuelbethelson.com. We will be in touch shortly."
+            />
+            <!-- <input
+              type="hidden"
+              name="_next"
+              value="https://lemuelbethelson.com/thanks.html"
+            /> -->
+            <button
+              type="submit"
+              class="bg-white text-red-800 font-bold rounded-full p-3 mt-2 transition-all duration-200 active:scale-90"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </section>
     </main>
+
+    <footer
+      class="footer flex flex-col justify-center items-center w-full min-h-[10vh] text-black text-center py-4 px-3"
+    >
+      <p class="text-sm font-bold text-center lg:text-base">
+        <a href="#hero-section">Lemuel Bethelson.</a> All Rights Reserved.
+        &copy;2022
+      </p>
+      <p class="text-sm lg:text-base">
+        Made by
+        <a
+          href="https://twitter.com/KamCy_0110"
+          class="font-bold"
+          >KamCy Ahaka</a
+        >
+      </p>
+    </footer>
 
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/observers.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

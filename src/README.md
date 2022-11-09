@@ -1,3 +1,5 @@
+# Company Brief
+
 The objects for which company is established are : To Carry on the business of maintenance and repair, installation of generator sets, sales of generator and generator part, maintenance of telecommunications infrastructure, preventive and corrective maintenance, maintenance of active equipment support, facing, Air condition, Electrical system, installation and maintenance of solar system panels, Audit for Telecommunications companies, General Repairs, Installation, Hybrid power systems, generator system, cabinitze Dc Generator system, solar installation, And General marchandise
 
 To carry on the business of  trading, sales, supplies, import, marketing, and distribution of general Goods, manufacturer's representatives, commission Agent, and general marchandise.
