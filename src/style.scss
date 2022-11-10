@@ -215,3 +215,20 @@ textarea {
     }
   }
 }
+
+.audio-control > i {
+  transition: all .3s ease;
+
+  &.pulsate {
+    animation: pulsateIcon 700ms ease infinite normal forwards;
+  }
+}
+
+@keyframes pulsateIcon {
+  0% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
