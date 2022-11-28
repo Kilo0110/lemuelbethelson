@@ -209,30 +209,4 @@ textarea {
   .contact-section > .pitch-contaiener {
     grid-area: pitch;
   }
-}
-
-.audio-control > i {
-  transition: all 0.3s ease;
-}
-.audio-control > i.pulsate {
-  -webkit-animation: pulsateIcon 700ms ease infinite normal forwards;
-          animation: pulsateIcon 700ms ease infinite normal forwards;
-}
-
-@-webkit-keyframes pulsateIcon {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulsateIcon {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
 }/*# sourceMappingURL=style.css.map */
