@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Lemuel Bethelson || Email Confirmation</title>
+</head>
+<body class="min-h-[100vh] flex justify-center items-center">
+      <header
+      class="header bg-white shadow-md fixed z-10 top-0 left-0 w-full min-h-[10vh]"
+    >
+      <nav class="nav flex items-center justify-between py-4 px-8">
+        <a
+          href="/"
+          class="nav__logo nav__link font-bold text-lg hover:tracking-widest transition-all duration-300 text-white"
+        >
+          <img
+            class="w-24"
+            src="./assets/img/logo --red.png"
+            alt=""
+          />
+        </a>
+        <menu
+          class="nav__links-container z-[11] flex flex-col bg-white shadow-lg justify-center gap-3 fixed -right-full top-0 min-h-full w-[70vw] max-w-md lg:relative lg:right-0 lg:flex-row lg:max-w-none lg:shadow-none lg:justify-end lg:bg-transparent transition-all duration-300"
+        >
+          <li
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+          >
+            <a
+              href="#hero-section"
+              class="flex items-center justify-between"
+            >
+              Home <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
+          </li>
+          <li
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+          >
+            <a
+              href="#services-section"
+              class="flex items-center justify-between"
+            >
+              What We Do
+              <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
+          </li>
+          <li
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+          >
+            <a
+              href="#gallery-section"
+              class="flex items-center justify-between"
+            >
+              Gallery <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
+          </li>
+          <li
+            class="nav__link cursor-pointer mx-2 rounded px-2 py-2 border-2 transition-all duration-300 hover:bg-red-800 hover:text-white hover:border-black lg:text-black lg:border-none"
+          >
+            <a
+              href="#contact-section"
+              class="flex items-center justify-between"
+            >
+              Contact Us
+              <i class="fa-solid fa-angles-right text-xs lg:hidden"></i>
+            </a>
+          </li>
+        </menu>
+        <button
+          class="hamburger-icon min-h-[10px] z-10 aspect-square text-black lg:hidden"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button
+          class="close-menu-icon text-red-800 fixed top-7 z-[11] -right-full transition-all duration-300 lg:hidden"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </nav>
+    </header>
+  <div class="px-10 thanks-container bg-slate-100 min-h-[50vh] aspect-square flex flex-col justify-center items-center gap-5">
+    <h1 class="text-3xl font-bold">Thank you for contacting us. We will be in touch shortly</h1>
+    <a href="https://lemuelbethelson.com" class="underline">Return to home page</a>
+  </div>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
